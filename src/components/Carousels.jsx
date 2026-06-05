@@ -13,11 +13,8 @@ function Banner() {
             style={{ maxHeight: "500px", objectFit: "cover" }}
           />
           <Carousel.Caption>
-            <h3>Neapolitan Pizza</h3>
-            <p>
-              If you are looking for a traditional Italian pizza, the Neapolitan
-              is the best option!
-            </p>
+            <h3>{slide.title}</h3>
+            <p>{slide.description}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
