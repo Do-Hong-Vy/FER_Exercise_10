@@ -8,7 +8,7 @@ function Menu() {
       <Row>
         {pizzas.map((pizza) => (
           <Col md={3} key={pizza.id} className="mb-4">
-            <Card className="h-100 position-relative">
+            <Card className="h-100 position-relative bg-dark border-0 overflow-hidden">
               {pizza.sale && (
                 <Badge
                   bg="warning"
@@ -34,9 +34,8 @@ function Menu() {
                 variant="top"
                 src={pizza.img}
                 alt={pizza.name}
-                style={{ height: "200px", objectFit: "cover" }}
               />
-              <Card.Body className="d-flex flex-column">
+              <Card.Body className="d-flex flex-column bg-white">
                 <Card.Title className="fw-bold">{pizza.name} Pizza</Card.Title>
                 <Card.Text>
                   {pizza.id === 2 || pizza.id === 3 ? (
